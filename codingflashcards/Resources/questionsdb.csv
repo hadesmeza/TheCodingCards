@@ -1,0 +1,39 @@
+"      Find the intersecting node in a Y shaped linked list
+
+      (4)-(6)-(8)-(10)-(11)-(12)-(13)
+      (15)-(17)/
+
+      output = [ 10 ]","Find longest linked list
+substract the shortest length to the longes
+Traverse in longest list the while i = 0 until i less than (longest - shortest)
+Then traverse both lists one by one till they intersect
+Complexity O(n+m)","public Node FindIntersection(LinkedList LListX,  LinkedList LListY)
+{
+   int lengthX = LListX.Count,
+   lengthY = LListY.Count,
+   delta = 0;
+   Node x, y;
+
+   if (lengthX > lengthY)
+   {
+       delta = lengthX - lengthY;
+       x = LListX.FindAt(delta);
+       y = LListY.First;
+
+   }
+   else
+   {
+       delta = lengthY - lengthX;
+       y = LListY.FindAt(delta);
+       x = LListX.First;
+   }
+
+   while (x != null && y != null)
+   {
+       if (x.Data.Equals(y.Data)) break;
+       x = x.Next;
+       y = y.Next;
+   }
+
+   return x;
+}"

@@ -1,0 +1,77 @@
+﻿@model codingflashcards.Models.FlashCardModel
+
+<div data-role="content" >
+
+    <div>
+        <div class="tc-tile tc-header tc-ico">
+            <div class="icon-dnbubble" style="text-align: center; font-size: 50px;"></div>
+
+        </div>
+
+        <div class="tc-tile tc-header tc-header-content" style="display: none;">
+
+            <span style="font-size: 20px;">question</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right; font-size: 30px;"></span>
+            <div class="tc-body">
+                <hr class="style-one">
+                <pre>
+           @Html.Raw(Model.Question)
+           </pre>
+            </div>
+        </div>
+
+        @if (!String.IsNullOrWhiteSpace(Model.Hint))
+        {
+            <div class="tc-tile tc-body tc-ico">
+                <div class="icon-dnlightning" style="text-align: center; font-size: 50px;"></div>
+
+            </div>
+
+            <div class="tc-tile tc-body tc-body-content " style="display: none;">
+                <span style="font-size: 20px;">approach</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right; font-size: 30px;"></span>
+
+                <div class="tc-body">
+
+                    <hr class="style-one">
+                    <pre>
+            @Html.Raw(Model.Hint)
+           </pre>
+                </div>
+            </div>
+        }
+        <div class="tc-tile tc-answer tc-ico" style="margin-bottom: 10px;">
+            <div class="icon-dnlightbulb" style="text-align: center; font-size: 50px;"></div>
+        </div>
+
+        <div class="tc-tile tc-answer tc-answer-content " style="display: none; margin-bottom: 10px;">
+            <span style="font-size: 20px;">answer</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right; font-size: 30px;"></span>
+
+            <div class="tc-body" style="font-size: 10px;">
+
+                <hr class="style-one">
+                <pre>
+            @Html.Raw(Model.Answer)
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Footer
+{
+    <div id="container">
+
+        <a href="@Url.Action("index", "question", new { id = Model.QuestionId + 1 })"  data-rel="page" data-transition="flip">
+            <div id="tc-fotter-item" class="icon-dnarrow-right">
+            </div>
+        </a>
+
+    </div>
+}
+
+<script type="text/javascript">
+    $(window.document).ready(function (e) {
+
+        flashCard.init();
+    });
+</script>
