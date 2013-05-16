@@ -13,20 +13,29 @@
 </head>
 <body>
     <div id="tc-outter" data-role="page" data-theme="d" data-dom-cache="false">
-     
-    <div id="tc-brand " style="font-size: 25px; padding:10px; background-color: #2489CE; color: white;">
-        <span class="icon-dnlab"></span>
-        the coding cards <span class="favorite" style="font-size: 25px;"></span><span style="font-size: 25px;">eta</span>
-    </div>
-
+        <a href="@Url.Action("index", "home")"  data-rel="page" data-transition="flip">
+            <div id="tc-brand" style="font-size: 25px; padding: 10px; background-color: #2489CE; color: white; font-weight: normal;">
+                <span class="icon-dnlab"></span>
+                the coding cards <span class="favorite" style="font-size: 25px;"></span><span style="font-size: 25px;">eta</span>
+               @* <span class="icon-dnbookmark" style="text-align: right; color: gray;"></span>*@
+            </div>
+        </a>
         @RenderBody()
 
-           <!-- /content -->
-        @RenderSection("Footer", false)
+        <!-- /content -->
+        <div id="container">
+
+            <a href="@RenderSection("Footer")"  data-corners="false"  data-rel="page" data-transition="flip"  >
+                <div class="icon-dnarrow-right tc-fotter-item right">
+                </div>
+            </a>
+            <div class="icon-dnarrow-left tc-fotter-item left ui-link" onclick="window.history.back()">
+            </div>
+
+
+        </div>
 
     </div>
- 
-
     @RenderSection("scripts", required: false)
 </body>
 </html>

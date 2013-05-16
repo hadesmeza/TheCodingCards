@@ -1,8 +1,14 @@
 ﻿var flashCard = (function ($) {
     var me = {};
-
+    
+    var goHome = function () {
+        if (location.href.indexOf("home") !== -1) return false;
+        $.mobile.changePage(location.href.split("question")[0] + "home", { transition: "flip" });
+        
+    };
+    
     var hideQuestionAndHint = function () {
-
+        $(".tc-tile.tc-answer.tc-answer-content").addClass('tc-cardover');
         if ($(".tc-tile.tc-header.tc-header-content .tc-toggle").hasClass("hide")) {
             $(".tc-tile.tc-header.tc-header-content .tc-toggle").trigger("click", true);
         }
@@ -17,11 +23,13 @@
     };
 
     var onTileClick = function(elem, data) {
-
         var el = $(this);
 
         if (el.hasClass("show") && !!data === false) {
-            if (el.parent().hasClass("tc-answer")) hideQuestionAndHint();
+            if (el.parent().hasClass("tc-answer")) {
+             
+                hideQuestionAndHint();
+            }
             el.next().slideDown();
             el.removeClass("icon-dnarrow-down show");
             el.addClass("icon-dnarrow-up hide");
@@ -43,7 +51,9 @@
             $(".tc-tile.tc-header.tc-ico").trigger("click");
             return;
         }
+
         $(".tc-tile.tc-header.tc-header-content .tc-toggle").trigger("click");
+        $(".tc-tile.tc-body.tc-body-content").addClass('tc-cardover');
         $(this).slideUp();
         $(this).addClass("hint-shown");
         $(".tc-tile.tc-body.tc-body-content").slideDown();
@@ -83,11 +93,7 @@
     var onBodyRightSwipe = function(event) {
        
         event.stopImmediatePropagation();
-        if (event.type === "swiperight") {
-            if (location.href.indexOf("home") !== -1) return false;
-
-            $.mobile.changePage(location.href.split("question")[0] + "home", { transition: "flip" });
-        }
+        if (event.type === "swiperight") window.history.back();
         return false;
     };
     

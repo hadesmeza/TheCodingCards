@@ -27,7 +27,7 @@
 
 .validation-summary-valid
 {
-    display: none;
+    display: none;t
 }
 
 
@@ -74,30 +74,33 @@
         color: #4C4C4C;
     }
 
-     #tc-outter .ui-content {
-         padding: 4px 10px 0 10px;
-     }
-
-    #tc-outter .tc-tile
-    {
-        padding: 10px;
-        text-align: left;
-        margin-top: 10px;
-        -moz-box-shadow: 1px 1px #888;
-        -webkit-box-shadow: 1px 1px #888;
-        box-shadow: 1px 2px #888;
-    }
 
     #tc-outter .tc-body
     {
         margin-top: 10px;
     }
 
-    #tc-outter .tc-tile.tc-header
+    #tc-outter .ui-content
     {
-        margin-top: 5px;
-        background: white;
+        padding: 4px 10px 0 10px;
     }
+
+    #tc-outter .tc-tile
+    {
+        padding: 10px;
+        text-align: left;
+        margin-top: 10px;
+        -moz-box-shadow: 0 1px #c0c0c0;
+        -webkit-box-shadow: 0 1px #c0c0c0;
+        box-shadow: 0 1px #c0c0c0;
+    }
+
+
+        #tc-outter .tc-tile.tc-header
+        {
+            margin-top: 5px;
+            background: white;
+        }
 
     #tc-outter .tc-ico,
     #tc-outter .tc-header span,
@@ -105,9 +108,11 @@
     #tc-outter .tc-answer span
     {
         color: #2489CE;
+        font-size: 20px;
     }
 
-    #tc-outter .tc-tile.tc-header.tc-ico, #tc-outter .tc-tile.tc-body.tc-ico,
+    #tc-outter .tc-tile.tc-header.tc-ico,
+    #tc-outter .tc-tile.tc-body.tc-ico,
     #tc-outter .tc-tile.tc-answer.tc-ico
     {
         padding: 50px;
@@ -165,14 +170,23 @@ hr.style-one
 
 
 
-#tc-fotter-item
+.tc-fotter-item
 {
     position: absolute;
     cursor: pointer;
     height: 100%;
-    font-size: 30px; text-align: right; right: 20px; margin-top: 7px;
+    font-size: 30px;
+    margin-top: 7px;
 }
 
+.tc-fotter-item.right {
+       right: 20px;
+}
+
+.tc-fotter-item.left {
+    left: 20px;
+    font-weight: normal;
+}
 
 .wrapper
 {
@@ -186,12 +200,12 @@ hr.style-one
 #one
 {
     background: white;
-    -moz-box-shadow: 1px 1px #888;
-    -webkit-box-shadow: 1px 1px #888;
-    box-shadow: 1px 2px #888;
+    -moz-box-shadow: 1px 1px #c0c0c0;
+    -webkit-box-shadow: 1px 1px #c0c0c0;
+    box-shadow: 1px 2px #c0c0c0;
     float: left;
     margin-right: 10px;
-    width:50%;
+    width: 50%;
     padding: 50px 0 50px 0;
     margin-bottom: 5px;
 }
@@ -199,16 +213,15 @@ hr.style-one
 #two
 {
     background: white;
-    -moz-box-shadow: 1px 1px #888;
-    -webkit-box-shadow: 1px 1px #888;
-    box-shadow: 1px 2px #888;
+    -moz-box-shadow: 1px 1px #c0c0c0;
+    -webkit-box-shadow: 1px 1px #c0c0c0;
+    box-shadow: 1px 2px #c0c0c0;
     overflow: hidden;
     padding: 50px 0 50px 0;
     margin-bottom: 5px;
-  
 }
 
-/*@media screen and (max-width: 100%)
+@media screen and (max-width: 100%)
 {
     #one
     {
@@ -218,28 +231,36 @@ hr.style-one
         border: 0;
         border-bottom: 2px solid #000;
     }
-}*/
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot');
-	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.woff') format('woff'),
-		url('fonts/icomoon.ttf') format('truetype'),
-		url('fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+}
+
+#tc-outter .tc-tile.tc-cardover
+{
+    margin-top: 0;
+    -webkit-box-shadow: 0px -4px 7px #c0c0c0;
+    -moz-box-shadow: 0px -4px 7px #c0c0c0;
+    box-shadow: 0px -4px 7px #c0c0c0;
+}
+
+@font-face
+{
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot');
+    src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+[data-icon]:before
+{
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Use the following CSS code if you want to have a class per icon */
@@ -248,109 +269,174 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-dn"] {
 */
-.icon-dnaid, .icon-dnhome, .icon-dnshare, .icon-dnarrow-left, .icon-dnarrow-right, .icon-dnarrow-down, .icon-dnarrow-up, .icon-dnbookmark, .icon-dnlightning, .icon-dntree, .icon-dncog, .icon-dnuser, .icon-dnbubble, .icon-dncabinet, .icon-dninfo, .icon-dnlightbulb, .icon-dnshare-2, .icon-dnmagnifying-glass, .icon-dnlink, .icon-dnthumbs-up, .icon-dnthumbs-up-2, .icon-dnquestion, .icon-dninfo-2, .icon-dnlab, .icon-dnfilter, .icon-dnbookmark-2, .icon-dncode, .icon-dnpause, .icon-dnplay, .icon-dnstop, .icon-dnstack, .icon-dnswitch {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+.icon-dnaid, .icon-dnhome, .icon-dnshare, .icon-dnarrow-left, .icon-dnarrow-right, .icon-dnarrow-down, .icon-dnarrow-up, .icon-dnbookmark, .icon-dnlightning, .icon-dntree, .icon-dncog, .icon-dnuser, .icon-dnbubble, .icon-dncabinet, .icon-dninfo, .icon-dnlightbulb, .icon-dnshare-2, .icon-dnmagnifying-glass, .icon-dnlink, .icon-dnthumbs-up, .icon-dnthumbs-up-2, .icon-dnquestion, .icon-dninfo-2, .icon-dnlab, .icon-dnfilter, .icon-dnbookmark-2, .icon-dncode, .icon-dnpause, .icon-dnplay, .icon-dnstop, .icon-dnstack, .icon-dnswitch
+{
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
 }
-.icon-dnaid:before {
-	content: "\e000";
-}
-.icon-dnhome:before {
-	content: "\e001";
-}
-.icon-dnshare:before {
-	content: "\e002";
-}
-.icon-dnarrow-left:before {
-	content: "\e003";
-}
-.icon-dnarrow-right:before {
-	content: "\e004";
-}
-.icon-dnarrow-down:before {
-	content: "\e005";
-}
-.icon-dnarrow-up:before {
-	content: "\e006";
-}
-.icon-dnbookmark:before {
-	content: "\e007";
-}
-.icon-dnlightning:before {
-	content: "\e008";
-}
-.icon-dntree:before {
-	content: "\e009";
-}
-.icon-dncog:before {
-	content: "\e00a";
-}
-.icon-dnuser:before {
-	content: "\e00b";
-}
-.icon-dnbubble:before {
-	content: "\e00c";
-}
-.icon-dncabinet:before {
-	content: "\e00d";
-}
-.icon-dninfo:before {
-	content: "\e00e";
-}
-.icon-dnlightbulb:before {
-	content: "\e00f";
-}
-.icon-dnshare-2:before {
-	content: "\e010";
-}
-.icon-dnmagnifying-glass:before {
-	content: "\e011";
-}
-.icon-dnlink:before {
-	content: "\e012";
-}
-.icon-dnthumbs-up:before {
-	content: "\e013";
-}
-.icon-dnthumbs-up-2:before {
-	content: "\e014";
-}
-.icon-dnquestion:before {
-	content: "\e015";
-}
-.icon-dninfo-2:before {
-	content: "\e016";
-}
-.icon-dnlab:before {
-	content: "\e017";
-}
-.icon-dnfilter:before {
-	content: "\e018";
-}
-.icon-dnbookmark-2:before {
-	content: "\e019";
-}
-.icon-dncode:before {
-	content: "\e01a";
-}
-.icon-dnpause:before {
-	content: "\e01b";
-}
-.icon-dnplay:before {
-	content: "\e01c";
-}
-.icon-dnstop:before {
-	content: "\e01d";
-}
-.icon-dnstack:before {
-	content: "\e01e";
-}
-.icon-dnswitch:before {
-	content: "\e01f";
-}
+
+    .icon-dnaid:before
+    {
+        content: "\e000";
+    }
+
+    .icon-dnhome:before
+    {
+        content: "\e001";
+    }
+
+    .icon-dnshare:before
+    {
+        content: "\e002";
+    }
+
+    .icon-dnarrow-left:before
+    {
+        content: "\e003";
+    }
+
+    .icon-dnarrow-right:before
+    {
+        content: "\e004";
+    }
+
+    .icon-dnarrow-down:before
+    {
+        content: "\e005";
+    }
+
+    .icon-dnarrow-up:before
+    {
+        content: "\e006";
+    }
+
+    .icon-dnbookmark:before
+    {
+        content: "\e007";
+    }
+
+    .icon-dnlightning:before
+    {
+        content: "\e008";
+    }
+
+    .icon-dntree:before
+    {
+        content: "\e009";
+    }
+
+    .icon-dncog:before
+    {
+        content: "\e00a";
+    }
+
+    .icon-dnuser:before
+    {
+        content: "\e00b";
+    }
+
+    .icon-dnbubble:before
+    {
+        content: "\e00c";
+    }
+
+    .icon-dncabinet:before
+    {
+        content: "\e00d";
+    }
+
+    .icon-dninfo:before
+    {
+        content: "\e00e";
+    }
+
+    .icon-dnlightbulb:before
+    {
+        content: "\e00f";
+    }
+
+    .icon-dnshare-2:before
+    {
+        content: "\e010";
+    }
+
+    .icon-dnmagnifying-glass:before
+    {
+        content: "\e011";
+    }
+
+    .icon-dnlink:before
+    {
+        content: "\e012";
+    }
+
+    .icon-dnthumbs-up:before
+    {
+        content: "\e013";
+    }
+
+    .icon-dnthumbs-up-2:before
+    {
+        content: "\e014";
+    }
+
+    .icon-dnquestion:before
+    {
+        content: "\e015";
+    }
+
+    .icon-dninfo-2:before
+    {
+        content: "\e016";
+    }
+
+    .icon-dnlab:before
+    {
+        content: "\e017";
+    }
+
+    .icon-dnfilter:before
+    {
+        content: "\e018";
+    }
+
+    .icon-dnbookmark-2:before
+    {
+        content: "\e019";
+    }
+
+    .icon-dncode:before
+    {
+        content: "\e01a";
+    }
+
+    .icon-dnpause:before
+    {
+        content: "\e01b";
+    }
+
+    .icon-dnplay:before
+    {
+        content: "\e01c";
+    }
+
+    .icon-dnstop:before
+    {
+        content: "\e01d";
+    }
+
+    .icon-dnstack:before
+    {
+        content: "\e01e";
+    }
+
+    .icon-dnswitch:before
+    {
+        content: "\e01f";
+    }

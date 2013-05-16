@@ -1,6 +1,6 @@
 ﻿@model codingflashcards.Models.FlashCardModel
 
-<div data-role="content" >
+<div data-role="content">
 
     <div>
         <div class="tc-tile tc-header tc-ico">
@@ -10,7 +10,7 @@
 
         <div class="tc-tile tc-header tc-header-content" style="display: none;">
 
-            <span style="font-size: 20px;">question</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right; font-size: 30px;"></span>
+            <span>question</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right;"></span>
             <div class="tc-body">
                 <hr class="style-one">
                 <pre>
@@ -27,7 +27,7 @@
             </div>
 
             <div class="tc-tile tc-body tc-body-content " style="display: none;">
-                <span style="font-size: 20px;">approach</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right; font-size: 30px;"></span>
+                <span>approach</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right;"></span>
 
                 <div class="tc-body">
 
@@ -43,7 +43,7 @@
         </div>
 
         <div class="tc-tile tc-answer tc-answer-content " style="display: none; margin-bottom: 10px;">
-            <span style="font-size: 20px;">answer</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right; font-size: 30px;"></span>
+            <span style="font-size: 20px;">answer</span><span class="tc-toggle icon-dnarrow-up hide" style="float: right;"></span>
 
             <div class="tc-body" style="font-size: 10px;">
 
@@ -59,14 +59,7 @@
 
 @section Footer
 {
-    <div id="container">
-
-        <a href="@Url.Action("index", "question", new { id = Model.QuestionId + 1 })"  data-rel="page" data-transition="flip">
-            <div id="tc-fotter-item" class="icon-dnarrow-right">
-            </div>
-        </a>
-
-    </div>
+    @Url.Action("index", "question", new { id = Model.QuestionId + 1 })
 }
 
 <script type="text/javascript">
