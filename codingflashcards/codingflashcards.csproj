@@ -146,8 +146,10 @@
   <ItemGroup>
     <Content Include="Content\fonts\icomoon.dev.svg" />
     <Content Include="Content\fonts\icomoon.svg" />
+    <Content Include="Content\icon.png" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\ajax-loader.png" />
+    <Content Include="Content\images\icon.png" />
     <Content Include="Content\images\icons-18-black.png" />
     <Content Include="Content\images\icons-18-white.png" />
     <Content Include="Content\images\icons-36-black.png" />

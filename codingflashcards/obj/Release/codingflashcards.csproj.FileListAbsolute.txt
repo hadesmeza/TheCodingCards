@@ -30,7 +30,6 @@ C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\coding
 C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\codingflashcards\bin\System.Web.WebPages.Razor.xml
 C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\codingflashcards\obj\Release\codingflashcards.dll
 C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\codingflashcards\obj\Release\codingflashcards.pdb
-C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\codingflashcards\obj\Release\codingflashcards.csprojResolveAssemblyReference.cache
 C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\codingflashcards.dll
 C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\codingflashcards.pdb
 C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\Antlr3.Runtime.dll

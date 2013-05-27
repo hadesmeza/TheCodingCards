@@ -1,0 +1,442 @@
+﻿/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #f00;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+
+/* jQuery mobile styles
+-----------------------------------------------------------*/
+
+/* Make listview buttons fill the whole horizontal width of the screen */
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li
+{
+    padding-right: 15px;
+}
+
+.ui-bar-a, .ui-body-a, .ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a,
+.ui-bar-b, .ui-body-b, .ui-btn-up-b, .ui-btn-hover-b, .ui-btn-down-b,
+.ui-bar-c, .ui-body-c, .ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c,
+.ui-bar-d, .ui-body-d, .ui-btn-up-d, .ui-btn-hover-d, .ui-btn-down-d,
+.ui-bar-e, .ui-body-e, .ui-btn-up-e, .ui-btn-hover-e, .ui-btn-down-e,
+.ui-btn-active
+{
+    text-shadow: none;
+}
+
+#tc-outter
+{
+    font-family: "Segoe UI Symbol";
+    color: #4C4C4C;
+    background: #E6E6E6;
+    padding-bottom: 30px;
+}
+
+    #tc-outter .tc-heading
+    {
+        background-color: #339933;
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    #tc-outter #tc-brand
+    {
+        font-size: 25px;
+        text-align: left;
+        max-height: 110px;
+        overflow: hidden;
+        color: #4C4C4C;
+    }
+
+
+    #tc-outter .tc-body
+    {
+        margin-top: 10px;
+    }
+
+    #tc-outter .ui-content
+    {
+        padding: 4px 10px 0 10px;
+    }
+
+    #tc-outter .tc-tile
+    {
+        padding: 10px;
+        text-align: left;
+        margin-top: 10px;
+        -moz-box-shadow: 0 1px #c0c0c0;
+        -webkit-box-shadow: 0 1px #c0c0c0;
+        box-shadow: 0 1px #c0c0c0;
+    }
+
+
+        #tc-outter .tc-tile.tc-header
+        {
+            margin-top: 5px;
+            background: white;
+        }
+
+    #tc-outter .tc-ico,
+    #tc-outter .tc-header span,
+    #tc-outter .tc-body span,
+    #tc-outter .tc-answer span
+    {
+        color: #2489CE;
+        font-size: 20px;
+    }
+
+    #tc-outter .tc-tile.tc-header.tc-ico,
+    #tc-outter .tc-tile.tc-body.tc-ico,
+    #tc-outter .tc-tile.tc-answer.tc-ico
+    {
+        padding: 50px;
+    }
+
+    #tc-outter .tc-tile.tc-body,
+    #tc-outter .tc-tile.tc-answer
+    {
+        background: white;
+    }
+
+pre
+{
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+
+hr.style-one
+{
+    margin-top: 1px;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.favorite:after
+{
+    content: "\03B2";
+}
+
+.ui-footer.ui-bar-b
+{
+    background-image: none;
+    background-color: black;
+    opacity: 0.6;
+}
+
+#container
+{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+
+.tc-fotter-item
+{
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    font-size: 30px;
+    margin-top: 7px;
+}
+
+.tc-fotter-item.right {
+       right: 20px;
+}
+
+.tc-fotter-item.left {
+    left: 20px;
+    font-weight: normal;
+}
+
+.wrapper
+{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+    color: #2489CE;
+}
+
+
+#one
+{
+    background: white;
+    -moz-box-shadow: 1px 1px #c0c0c0;
+    -webkit-box-shadow: 1px 1px #c0c0c0;
+    box-shadow: 1px 2px #c0c0c0;
+    float: left;
+    margin-right: 10px;
+    width: 50%;
+    padding: 50px 0 50px 0;
+    margin-bottom: 5px;
+}
+
+#two
+{
+    background: white;
+    -moz-box-shadow: 1px 1px #c0c0c0;
+    -webkit-box-shadow: 1px 1px #c0c0c0;
+    box-shadow: 1px 2px #c0c0c0;
+    overflow: hidden;
+    padding: 50px 0 50px 0;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 100%)
+{
+    #one
+    {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        border-bottom: 2px solid #000;
+    }
+}
+
+#tc-outter .tc-tile.tc-cardover
+{
+    margin-top: 0;
+    -webkit-box-shadow: 0px -4px 7px #c0c0c0;
+    -moz-box-shadow: 0px -4px 7px #c0c0c0;
+    box-shadow: 0px -4px 7px #c0c0c0;
+}
+
+@font-face
+{
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot');
+    src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before
+{
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-dn"] {
+*/
+.icon-dnaid, .icon-dnhome, .icon-dnshare, .icon-dnarrow-left, .icon-dnarrow-right, .icon-dnarrow-down, .icon-dnarrow-up, .icon-dnbookmark, .icon-dnlightning, .icon-dntree, .icon-dncog, .icon-dnuser, .icon-dnbubble, .icon-dncabinet, .icon-dninfo, .icon-dnlightbulb, .icon-dnshare-2, .icon-dnmagnifying-glass, .icon-dnlink, .icon-dnthumbs-up, .icon-dnthumbs-up-2, .icon-dnquestion, .icon-dninfo-2, .icon-dnlab, .icon-dnfilter, .icon-dnbookmark-2, .icon-dncode, .icon-dnpause, .icon-dnplay, .icon-dnstop, .icon-dnstack, .icon-dnswitch
+{
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+    .icon-dnaid:before
+    {
+        content: "\e000";
+    }
+
+    .icon-dnhome:before
+    {
+        content: "\e001";
+    }
+
+    .icon-dnshare:before
+    {
+        content: "\e002";
+    }
+
+    .icon-dnarrow-left:before
+    {
+        content: "\e003";
+    }
+
+    .icon-dnarrow-right:before
+    {
+        content: "\e004";
+    }
+
+    .icon-dnarrow-down:before
+    {
+        content: "\e005";
+    }
+
+    .icon-dnarrow-up:before
+    {
+        content: "\e006";
+    }
+
+    .icon-dnbookmark:before
+    {
+        content: "\e007";
+    }
+
+    .icon-dnlightning:before
+    {
+        content: "\e008";
+    }
+
+    .icon-dntree:before
+    {
+        content: "\e009";
+    }
+
+    .icon-dncog:before
+    {
+        content: "\e00a";
+    }
+
+    .icon-dnuser:before
+    {
+        content: "\e00b";
+    }
+
+    .icon-dnbubble:before
+    {
+        content: "\e00c";
+    }
+
+    .icon-dncabinet:before
+    {
+        content: "\e00d";
+    }
+
+    .icon-dninfo:before
+    {
+        content: "\e00e";
+    }
+
+    .icon-dnlightbulb:before
+    {
+        content: "\e00f";
+    }
+
+    .icon-dnshare-2:before
+    {
+        content: "\e010";
+    }
+
+    .icon-dnmagnifying-glass:before
+    {
+        content: "\e011";
+    }
+
+    .icon-dnlink:before
+    {
+        content: "\e012";
+    }
+
+    .icon-dnthumbs-up:before
+    {
+        content: "\e013";
+    }
+
+    .icon-dnthumbs-up-2:before
+    {
+        content: "\e014";
+    }
+
+    .icon-dnquestion:before
+    {
+        content: "\e015";
+    }
+
+    .icon-dninfo-2:before
+    {
+        content: "\e016";
+    }
+
+    .icon-dnlab:before
+    {
+        content: "\e017";
+    }
+
+    .icon-dnfilter:before
+    {
+        content: "\e018";
+    }
+
+    .icon-dnbookmark-2:before
+    {
+        content: "\e019";
+    }
+
+    .icon-dncode:before
+    {
+        content: "\e01a";
+    }
+
+    .icon-dnpause:before
+    {
+        content: "\e01b";
+    }
+
+    .icon-dnplay:before
+    {
+        content: "\e01c";
+    }
+
+    .icon-dnstop:before
+    {
+        content: "\e01d";
+    }
+
+    .icon-dnstack:before
+    {
+        content: "\e01e";
+    }
+
+    .icon-dnswitch:before
+    {
+        content: "\e01f";
+    }
