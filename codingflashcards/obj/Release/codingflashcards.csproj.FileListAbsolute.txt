@@ -31,3 +31,36 @@ C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\coding
 C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\codingflashcards\obj\Release\codingflashcards.dll
 C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\codingflashcards\obj\Release\codingflashcards.pdb
 C:\Users\Ing.hades\Documents\Visual Studio 2012\Projects\codingflashcards\codingflashcards\obj\Release\codingflashcards.csprojResolveAssemblyReference.cache
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\codingflashcards.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\codingflashcards.pdb
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\Antlr3.Runtime.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\EntityFramework.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\Newtonsoft.Json.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Net.Http.Formatting.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Helpers.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Http.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Http.WebHost.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Mvc.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Optimization.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Providers.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Razor.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Routing.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.WebPages.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\WebGrease.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\EntityFramework.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\Newtonsoft.Json.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Net.Http.Formatting.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Helpers.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Http.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Http.WebHost.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Mvc.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.Razor.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.WebPages.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\obj\Release\codingflashcards.csprojResolveAssemblyReference.cache
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\obj\Release\codingflashcards.dll
+C:\Users\Jesse\Documents\GitHub\TheCodingCards\codingflashcards\obj\Release\codingflashcards.pdb
